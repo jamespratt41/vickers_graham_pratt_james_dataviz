@@ -1,6 +1,279 @@
-@charset "utf-8";
+@charset "UTF-8";
 /* CSS Document */
 
-hidden{
-    display: none;
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+/* p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+} */
+
+
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav
+{
+	margin: 0;
+	padding: 0;
+}
+
+img
+{
+	border: none; /*Remove border if image is a link*/
+	margin: 0;
+	padding: 0;
+}
+
+/*html selectors*/
+
+body
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #333;
+	background-color: #D3D3D3;
+}
+
+
+
+
+.hidden{
+	display: none;
+}
+
+
+
+/*a:link is for not visited(standard unclicked link),
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link
+{
+ 	text-decoration:none;
+	color: #0085C7;
+
+}
+a:visited{
+	color: #0085C7;
+}
+
+a:hover, a:active
+{
+	text-decoration:none;
+	color: #DF0024;
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #0085C7;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  justify-content: flex-start;
+	/* border-bottom: solid 1px #000; */
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #D3D3D3;
+	border-bottom: solid 1px #000;
+}
+
+/*This is a flex item*/
+#logo
+{
+	color: #fff;
+  padding-top: 50px;
+  padding-left: 20px;
+	line-height: 100px;
+	text-align: center;
+	margin: 0;
+	width: 200px;
+
+
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav
+{
+	margin-top: 25px;
+	margin-left: 100px;
+	width: 500px;
+	color: #b3b3b3;
+	line-height: 100px;
+	text-align: right;
+	font-size: 24px;
+
+
+}
+
+/* Takes the bullet points and indentation out of lists   */
+ .table {
+	min-width: 696px;
+	display: table;
+	margin: 0 auto;
+	float:right;
+
+
+}
+
+ul#horizontal-menu {
+	/* min-width: 696px; */
+	width:inherit;
+	list-style: none;
+	margin-left: 60px;
+	padding-top: 20px;
+
+	}
+	ul#horizontal-menu li {
+		display: inline;
+		padding-right: 5px;
+		font-weight:bold;
+		font-color: #b3b3b3;
+
+	}
+/*Menu used in the footer for alinging to the left  */
+	ul#horizontal-menu1 {
+		/* min-width: 696px; */
+		width:auto;
+		padding-right: 20px;
+		list-style: none;
+		padding-top: 20px;
+
+		}
+		ul#horizontal-menu1 li {
+			display: inline;
+			padding-right: 5px;
+			font-weight:bold;
+			font-color: #b3b3b3;
+		}
+
+#promo
+{
+	/* margin-top: 40px; */
+  padding-left: 7px;
+	border-bottom: solid 1px #000;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#promo p
+{
+	line-height: 250px;
+}
+
+#promoImage
+{
+	margin-left: auto;
+	width: 280px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#promoImage
+{
+	margin-left: auto;
+	width: 280px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#productInfo
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #000;
+	padding-bottom: 40px;
+}
+
+.productDescLargeLeft
+{
+	width: 410px;
+}
+
+.productDescLargeRight
+{
+	width: 410px;
+}
+
+#mainFooter
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 50px;
+	border-bottom: solid 1px #000;
+	width:/2;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav
+{
+	margin-right: auto;
+	width: 500px;
+  border-right: 40px;
+	color: #b3b3b3;
+	padding-top: 10px;
+	line-height: 0px;
+	text-align: left;
+	font-size: 24px;
+}
+
+#copyRight
+{
+	margin-left: auto;
+	padding-top: 20px;
+  padding-left: 40px;
+	color: #0085C7;
+	width: 310px;
+	line-height: 30px;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+
+#bottomBar
+{
+	background-color: #0085C7;
+	height: 20px;
 }
