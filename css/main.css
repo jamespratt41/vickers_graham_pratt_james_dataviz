@@ -169,8 +169,8 @@ ul#horizontal-menu {
 /*Menu used in the footer for alinging to the left  */
 	ul#horizontal-menu1 {
 		/* min-width: 696px; */
-		width:auto;
-		padding-right: 20px;
+		width: auto;
+		padding-right: 10px;
 		list-style: none;
 		padding-top: 20px;
 
@@ -224,6 +224,26 @@ ul#horizontal-menu {
 	padding-bottom: 40px;
 }
 
+#productInfo2
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #000;
+	padding-bottom: 40px;
+}
+
+#productInfo3
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #000;
+	padding-bottom: 40px;
+}
+
 .productDescLargeLeft
 {
 	width: 410px;
@@ -249,7 +269,7 @@ ul#horizontal-menu {
 #footerNav
 {
 	margin-right: auto;
-	width: 500px;
+	width: 550px;
   border-right: 40px;
 	color: #b3b3b3;
 	padding-top: 10px;
